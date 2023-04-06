@@ -18,11 +18,11 @@ jobs:
         with:
           node-version: 18
 
-      - name: Create ~/.npmrc file (for publishing)
-        run: |
-          echo //npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }} >> ~/.npmrc |
-          echo access=public >> ~/npmrc |
-          echo ${{ secrets.NPM_ORGANIZATION }}:registry=${{ secrets.NPM_REGISTRY }} >> ~/.npmrc
+      # - name: Create ~/.npmrc file (for publishing)
+      #   run: |
+      #     echo //npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }} >> ~/.npmrc |
+      #     echo access=public >> ~/.npmrc |
+      #     echo ${{ secrets.NPM_ORGANIZATION }}:registry=${{ secrets.NPM_REGISTRY }} >> ~/.npmrc
 
       - name: Install dependencies
         run: npm install

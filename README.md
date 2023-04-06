@@ -21,19 +21,7 @@ This repo comes with 3 git hooks handled by [Husky hooks](https://typicode.githu
 2. `pre-commit` which runs `npm run lint:check` to validate code formatting before actual committing
 3. `pre-push` which runs `npm run test` before pushing code
 
-## Automatic releases and publishing NPM package
-This repo has all things necessary to be published as a public package on
-[NPM](https://www.npmjs.com/). All you need to do is to:
-1. Create a NPM access token (https://docs.npmjs.com/creating-and-viewing-access-tokens)
-2. Create a repository secret called `NPM_TOKEN` with the value above
-3. Create a Github personal access token (https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic)
-4. Create a repository secret called `GH_TOKEN` with the value above
-5. That's it! Now every time a push/merge is made on branch `main` a release pipeline will run,
-   building the application, generating a new tag to the repo, bumping `package.json` version on
-   branch `main` according to the last commit change (check the `.releaserc.js`) and publishing this
-   to NPM, according to the config set on `package.json` `publishConfig`.
-
-## Commitlint and conventional commit messages
+## Conventional commit messages
 This repo uses [commitlint](https://commitlint.js.org/#/) to validate and standardize commit
 messages. This is also necessary for the release/publish step, which looks for this kind of message
 format to detect the correct version changes. Make sure you use it on your work, or let the
@@ -47,3 +35,15 @@ $ git commit -m 'refactor: adjust something'
 $ git commit -m 'docs: change on README.md'
 $ git commit -m 'chore: update CI'
 ```
+
+## Automatic releases and publishing as NPM package
+This repo has all things necessary to be published as a public package on
+[NPM](https://www.npmjs.com/). All you need to do is to:
+1. Create a NPM access token (https://docs.npmjs.com/creating-and-viewing-access-tokens)
+2. Create a repository secret called `NPM_TOKEN` with the value above
+3. Create a Github personal access token (https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic)
+4. Create a repository secret called `GH_TOKEN` with the value above
+5. That's it! Now every time a push/merge is made on branch `main` a release pipeline will run,
+   building the application, generating a new tag to the repo, bumping `package.json` version on
+   branch `main` according to the last commit change (check the `.releaserc.js`) and publishing this
+   to NPM, according to the config set on `package.json` `publishConfig`.

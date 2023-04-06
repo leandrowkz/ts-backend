@@ -8,6 +8,7 @@ be ready to go.
 - [TSConfig Paths](https://github.com/dividab/tsconfig-paths) (transform `import x from '@/sample'; @/ => src/`)
 - [Node 19+](https://nodejs.org/dist/latest-v19.x/docs/api/)
 - [NPM 7+](https://nodejs.org/dist/latest-v19.x/docs/api/)
+- [Commitlint](https://commitlint.js.org/#/)
 - [Eslint](https://typescript-eslint.io) (typescript)
 - [Prettier](https://prettier.io/) (on eslint)
 - [Jest](https://jestjs.io/docs/getting-started) (with ts-jest)

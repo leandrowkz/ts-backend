@@ -1,5 +1,5 @@
 {
-  "name": "ts-backend",
+  "name": "@lewkz/ts-backend",
   "version": "1.0.0",
   "description": "Typescript template for backend apps/packages.",
   "main": "build/src/index.js",

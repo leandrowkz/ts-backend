@@ -12,8 +12,16 @@ be ready to go.
 - [Prettier](https://prettier.io/) (on eslint)
 - [Jest](https://jestjs.io/docs/getting-started) (with ts-jest)
 - [Editorconfig](https://editorconfig.org/)
-- [Husky hooks](https://typicode.github.io/husky/#/) (pre-commit lint and pre-push test hooks)
+- [Husky hooks](https://typicode.github.io/husky/#/)
 - [Semantic-release](https://semantic-release.gitbook.io/semantic-release/) (automatically publishes this repo on NPM)
+
+## Git hooks
+This repo comes with 3 git hooks handled by [Husky hooks](https://typicode.github.io/husky/#/):
+1. `commit-msg` which checks if commit messages are under [conventional commit format](https://commitlint.js.org/#/concepts-commit-conventions)
+2. `pre-commit` which runs `npm run lint:check` to validate code formatting before actual committing
+3. `pre-push` which runs `npm run test` before pushing code
+
+
 
 ## Automatic releases and publishing NPM package
 This repo has all things necessary to be published as a public package on
@@ -27,7 +35,17 @@ This repo has all things necessary to be published as a public package on
    branch `main` according to the last commit change (check the `.releaserc.js`) and publishing this
    to NPM, according to the config set on `package.json` `publishConfig`.
 
-## Conventional commits
-This repo uses [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) to standardize
-commit messages. This is also necessary for the release/publish step. Make sure you use it on your
-work, or let the `pre-commit` hook validate it for you.
+## Commitlint and conventional commit messages
+This repo uses [commitlint](https://commitlint.js.org/#/) to validate and standardize commit
+messages. This is also necessary for the release/publish step, which looks for this kind of message
+format to detect the correct version changes. Make sure you use it on your work, or let the
+`commit-msg` hook validate it for you. [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) is a good complementary read also.
+
+All you have to do is commit like those below examples:
+```ts
+// see formats on https://commitlint.js.org/#/concepts-commit-conventions
+$ git commit -m 'feat: this change is related to a feature'
+$ git commit -m 'refactor: adjust something'
+$ git commit -m 'docs: change on README.md'
+$ git commit -m 'chore: update CI'
+```

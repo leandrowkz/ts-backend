@@ -1,0 +1,9 @@
+{
+  "name": "ts-backend",
+  "version": "1.0.0",
+  "description": "Typescript template for backend apps/packages.",
+  "main": "index.ts",
+  "repository": "git@github.com:leandrowkz/ts-backend.git",
+  "author": "Leandro Mangini Antunes <leandro.antunes@mollie.com>",
+  "license": "MIT"
+}

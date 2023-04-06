@@ -21,8 +21,6 @@ This repo comes with 3 git hooks handled by [Husky hooks](https://typicode.githu
 2. `pre-commit` which runs `npm run lint:check` to validate code formatting before actual committing
 3. `pre-push` which runs `npm run test` before pushing code
 
-
-
 ## Automatic releases and publishing NPM package
 This repo has all things necessary to be published as a public package on
 [NPM](https://www.npmjs.com/). All you need to do is to:

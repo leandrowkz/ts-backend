@@ -1,6 +1,6 @@
-# ts-backend
 Typescript template for backend packages/apps. It provides a working set of
-packages/resources ready to be used.
+packages/resources ready to be used. Just put your code under `src` and you'll
+be ready to go.
 
 ## Packages
 - [Typescript](https://www.typescriptlang.org/)

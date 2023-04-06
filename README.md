@@ -5,7 +5,7 @@ be ready to go.
 
 ## Packages
 - [Typescript](https://www.typescriptlang.org/)
-- [TSConfig Paths](https://github.com/dividab/tsconfig-paths) (transform `import x from '@/sample' // @/ => src/`)
+- [TSConfig Paths](https://github.com/dividab/tsconfig-paths) (transform `import x from '@/sample'; @/ => src/`)
 - [Node 19+](https://nodejs.org/dist/latest-v19.x/docs/api/)
 - [NPM 7+](https://nodejs.org/dist/latest-v19.x/docs/api/)
 - [Eslint](https://typescript-eslint.io) (typescript)

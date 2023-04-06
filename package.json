@@ -7,6 +7,7 @@
   "author": "Leandro Mangini Antunes <leandro.antunes@mollie.com>",
   "license": "MIT",
   "devDependencies": {
+    "husky": "^8.0.3",
     "typescript": "^5.0.3"
   }
 }

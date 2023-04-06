@@ -21,7 +21,7 @@ jobs:
       - name: Create ~/.npmrc file (for publishing)
         run: |
           echo //npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }} >> ~/.npmrc |
-          echo @${{ secrets.NPM_ORGANIZATION }}:registry=${{ secrets.NPM_REGISTRY }} >> ~/.npmrc
+          echo ${{ secrets.NPM_ORGANIZATION }}:registry=${{ secrets.NPM_REGISTRY }} >> ~/.npmrc
 
       - name: Install dependencies
         run: npm install

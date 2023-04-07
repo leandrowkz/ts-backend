@@ -44,7 +44,8 @@ This repo has all things necessary to be published as a public package on
 2. Create a repository secret called `NPM_TOKEN` with the value above
 3. Create a Github personal access token (https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic)
 4. Create a repository secret called `GH_TOKEN` with the value above
-5. That's it! Now every time a push/merge is made on branch `main` a release pipeline will run,
+5. Update the property `name` and `repository` on `package.json`
+6. That's it! Now every time a push/merge is made on branch `main` a release pipeline will run,
    building the application, generating a new tag to the repo, bumping `package.json` version on
    branch `main` according to the last commit change (check the `.releaserc.js`) and publishing this
    to NPM, according to the config set on `package.json` `publishConfig`.

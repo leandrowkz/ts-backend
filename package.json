@@ -1,6 +1,6 @@
 {
   "name": "@lewkz/ts-backend",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Typescript template for backend apps/packages.",
   "main": "build/src/index.js",
   "repository": "git@github.com:leandrowkz/ts-backend.git",

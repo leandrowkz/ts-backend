@@ -12,18 +12,18 @@
 - [ ] BREAKING CHANGE (existing functionality changes)
 
 ## 🙇‍♂️ PR checklist
-- [ ] I wrote proper tests, or not necessary
+- [ ] I wrote proper tests (if necessary)
 - [ ] I wrote a description of requested changes
 - [ ] I performed a self-review on my own code
 - [ ] I set proper PR labels
-- [ ] I have update the documentation accordingly, or not necessary
-- [ ] My code follows the code style of this project
+- [ ] I have update the documentation accordingly (if necessary)
+- [ ] My code follows the code style of this project (if necessary)
 
 ## ✅ Code review checklist
 Usually checked by reviewers
 - [ ] Code is self-documenting and easy to understand
 - [ ] There is no commented out code
 - [ ] There is no unecessary logging or debugging code
-- [ ] Errors are handled
+- [ ] Errors are handled (if necessary)
 - [ ] Naming of methods, variables, and classes are proper
 - [ ] Changes are documented in README.md (if necessary)

@@ -37,7 +37,7 @@ $ git commit -m 'docs: change on README.md'
 $ git commit -m 'chore: update CI'
 ```
 
-## Automatic releases and publishing as NPM package
+## Automatic releases and NPM package
 This repo has all things necessary to be published as a public package on
 [NPM](https://www.npmjs.com/). All you need to do is to:
 1. Create a NPM access token (https://docs.npmjs.com/creating-and-viewing-access-tokens)

@@ -1,5 +1,5 @@
 # 📦 TypeScript Node template
-This is a TS template for backend packages/apps. It provides a working set of
+TS template for backend packages/apps. It provides a working set of
 packages/resources ready to be used. Just put your code under `src` and you'll
 be ready to go.
 
